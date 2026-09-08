@@ -1,0 +1,19 @@
+  let form = document.getElementById("gameform");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault ();
+
+      let choice = document.getElementById("playerChoice").value;
+
+    console.log(choice);
+    });
+
+
+function getComputerChoice () {
+  let choices = ["rock","paper","scissors"];
+
+  let randomIndex = Math.floor(Math.random() * choices.length) ;
+
+  return choices [randomIndex] ;
+}
+
