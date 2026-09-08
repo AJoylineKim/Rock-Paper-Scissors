@@ -35,6 +35,25 @@ if (
 
 
 
+let form = document.getElementById("gameform");
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault ();
+
+  let playerChoice = document.getElementById("playerChoice")
+  .value
+  .toLowerCase ();
+
+  let computerChoice = getComputerChoice ();
+
+  let result = determineWinner (
+    playerChoice,
+    computerChoice
+    );
+
+  document.getElementById("result").textContent =
+    "Computer chose" + computerChoice + "." + result;
+});
 
 
 
