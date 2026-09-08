@@ -70,7 +70,15 @@ form.addEventListener("submit", function(event) {
 });
 
 
-let score = 0;
+let playerScore = 0;
+
+let computerScore = 0;
+
+addEventListener ("You Win!") function (event) {
+  playerScore = playerScore +1;
+  container.textContent = playerScore;
+});
+
 
 
 
