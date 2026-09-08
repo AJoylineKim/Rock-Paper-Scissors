@@ -34,6 +34,20 @@ if (
 }
 
 
+if (
+  (player === "paper" && computer === "scissors") ||
+  (player === "scissors" && computer === "rock") ||
+  (player === "rock" && computer === "paper")
+  ) {
+    return "You Lose!";
+}
+    return "Computer Loses!";
+}
+
+
+
+
+
 
 let form = document.getElementById("gameform");
 
@@ -54,6 +68,9 @@ form.addEventListener("submit", function(event) {
   document.getElementById("result").textContent =
     "Computer chose" + computerChoice + "." + result;
 });
+
+
+let score = 0;
 
 
 
